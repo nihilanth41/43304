@@ -1,0 +1,2 @@
+hello_world:publish:subscriber
+-DCATKIN_DEVEL_PREFIX=/nfs-home/zrrm74/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/nfs-home/zrrm74/catkin_ws/install -G Unix Makefiles
