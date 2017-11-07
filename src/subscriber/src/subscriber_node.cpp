@@ -1,11 +1,14 @@
 #include <ros/ros.h>
-#include "std_msgs/String.h"
+#include "std_msgs/Int8.h"
 
 #define QUEUE_SIZE 8
 
-void sub_callback(const std_msgs::String &msg) {
-	// Print the message
-	ROS_INFO_STREAM("Recieved message: " << msg.data << "");
+//void sub_callback(const std_msgs::String &msg) {
+//	// Print the message
+//	ROS_INFO_STREAM("Recieved message: " << msg.data << "");
+//}
+void sub_callback(const std_msgs::Int8 &msg) {
+	ROS_INFO("%d", msg.data);
 }
 
 int main(int argc, char **argv) { 
